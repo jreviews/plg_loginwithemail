@@ -1,0 +1,28 @@
+name: Package Release
+
+on:  
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Package plugin
+        run: |
+          cd src
+          zip -r ../plg_loginwithemail.zip .
+          cd ..
+      
+      - name: Checkout code
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "./plg_loginwithemail.zip"
+          body: "New version released."

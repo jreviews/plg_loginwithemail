@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="4.2" group="system" method="upgrade">
+  <name>PLG_SYSTEM_LOGINWITHEMAIL</name>
+  <version>1.0.0</version>
+  <creationDate>Feb 27, 2023</creationDate>
+	<author>ClickFWD</author>
+	<authorEmail>info@clickfwd.com</authorEmail>
+	<authorUrl>https://clickfwd.com</authorUrl>
+	<copyright>Copyright (C) 2010-2023. ClickFWD LLC. All rights reserved</copyright>
+	<license>GNU GPL version 3 or later</license>
+
+  <description>PLG_SYSTEM_LOGINWITHEMAIL_XML_DESCRIPTION</description>
+  <!-- Scripts to run on installation -->
+  <scriptfile></scriptfile>
+  <!-- Language files -->
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.plg_system_loginwithemail.ini</language>
+    <language tag="en-GB">en-GB/en-GB.plg_system_loginwithemail.sys.ini</language>
+  </languages>
+  <!-- Plugin files -->
+  <files>
+    <filename plugin="loginwithemail">loginwithemail.php</filename>
+  </files>
+</extension>
