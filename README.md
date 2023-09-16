@@ -1,6 +1,6 @@
 # Joomla 4 user login with email
 
-Joomla 4 plugin that allows users to log in with their email address or username.
+Joomla 4 plugin that allows users to log in with their email address or username. The email address can also be used in the password reset confirmation screen.
 
 ## Support us
 
